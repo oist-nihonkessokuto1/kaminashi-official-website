@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="2026年杉並区町選挙候補・日本結束党幹事長 上梨裕奨の公式サイト。プロフィール、政策、活動報告、支援・連絡の案内。">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  <title>上梨裕奨 公式サイト — 日本結束党 幹事長（2026杉並区町選挙）</title>
+  <style>
+    :root {
+      --bg-deep: #070508;
+      --bg-card: #121015;
+      --bg-elevated: #1a161f;
+      --text: #f4eef2;
+      --text-muted: #b8a8b5;
+      --accent-magenta: #e91e8c;
+      --accent-magenta-dim: #9d145f;
+      --accent-green: #2ee59d;
+      --accent-green-dim: #1a8f62;
+      --sakura: #ffb7d5;
+      --gold: #d4af37;
+      --gold-dim: #8a7024;
+      --border: rgba(233, 30, 140, 0.25);
+      --radius: 8px;
+      --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
+      --max-width: 80rem;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text);
+      background-color: var(--bg-deep);
+      background-image:
+        radial-gradient(ellipse 120% 80% at 50% -20%, rgba(233, 30, 140, 0.15), transparent 50%),
+        radial-gradient(ellipse 80% 50% at 100% 50%, rgba(46, 229, 157, 0.05), transparent 40%);
+      min-height: 100vh;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      z-index: 9999;
+      padding: 0.75rem 1.25rem;
+      background: var(--accent-magenta);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      left: 1rem;
+      top: 1rem;
+    }
+
+    /* Navigation */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 5, 8, 0.95);
+      border-bottom: 3px solid var(--accent-magenta-dim);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .brand .title {
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: var(--accent-magenta);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .brand .name {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-toggle {
+      display: none;
+    }
+
+    .nav-toggle-label {
+      display: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: var(--accent-magenta);
+      font-weight: 900;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .nav-list a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+
+    .nav-list a:hover {
+      color: var(--accent-magenta);
+    }
+
+    .nav-support-btn {
+      background: var(--accent-magenta);
+      color: white !important;
+      padding: 0.6rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 900 !important;
+      box-shadow: 0 4px 15px rgba(233, 30, 140, 0.3);
+    }
+
+    /* Sections */
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      min-height: 80vh;
+      padding: 4rem 1.25rem;
+      gap: 3rem;
+    }
+
+    .hero-content {
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--bg-deep);
+      background: var(--accent-green);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.1em;
+    }
+
+    .hero h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(3.5rem, 10vw, 5.5rem);
+      font-weight: 950;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .hero .slogan {
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: var(--accent-magenta);
+      margin-bottom: 2rem;
+      line-height: 1.2;
+    }
+
+    .hero-roles {
+      font-size: 1.1rem;
+      color: var(--sakura);
+      margin-bottom: 3rem;
+      font-weight: 700;
+      padding-left: 1rem;
+      border-left: 4px solid var(--gold);
+    }
+
+    .hero-portrait {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-portrait-img {
+      width: 100%;
+      max-width: 450px;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border: 6px solid var(--gold-dim);
+      box-shadow: 0 0 50px rgba(233, 30, 140, 0.3);
+      background: var(--bg-card);
+      display: block;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .btn {
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 900;
+      text-decoration: none;
+      text-align: center;
+      border-radius: var(--radius);
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .btn--primary {
+      background: var(--accent-magenta);
+      color: white;
+      box-shadow: 0 10px 25px rgba(233, 30, 140, 0.4);
+    }
+
+    .btn--primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px rgba(233, 30, 140, 0.5);
+    }
+
+    .btn--secondary {
+      background: transparent;
+      color: var(--accent-green);
+      border: 2px solid var(--accent-green);
+    }
+
+    .btn--secondary:hover {
+      background: rgba(46, 229, 157, 0.1);
+    }
+
+    /* Common Section Styles */
+    .section {
+      padding: 6rem 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .section--dark {
+      background: var(--bg-card);
+    }
+
+    .section-head {
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      font-size: 3rem;
+      font-weight: 950;
+      margin: 0;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 1.5rem;
+    }
+
+    .section-head h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 6px;
+      background: var(--accent-magenta);
+    }
+
+    .section-head .en {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--accent-magenta);
+      font-weight: 800;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Policy Grid */
+    .policy-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .policy-card {
+      background: var(--bg-elevated);
+      padding: 3.5rem 2.5rem;
+      border-left: 6px solid var(--accent-magenta);
+      transition: transform 0.3s;
+    }
+
+    .policy-card:nth-child(even) {
+      border-left-color: var(--accent-green);
+    }
+
+    .policy-card:hover {
+      transform: translateX(10px);
+    }
+
+    .policy-card h3 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      color: var(--sakura);
+    }
+
+    .policy-card p {
+      margin: 0;
+      color: var(--text-muted);
+    }
+
+    .policy-card ul {
+      margin: 1.2rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--text-muted);
+    }
+
+    .policy-card li + li {
+      margin-top: 0.9rem;
+    }
+
+    .policy-card--feature {
+      padding: 1.25rem 1.25rem 1.1rem;
+      border: 1px solid rgba(46, 229, 157, 0.22);
+      border-left: 4px solid var(--accent-green);
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgba(26, 22, 31, 0.95), rgba(18, 16, 21, 0.98));
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+      transition: transform 0.3s;
+    }
+
+    .policy-card--feature:nth-child(even) {
+      border-left-color: var(--accent-green);
+    }
+
+    .policy-card--feature:hover {
+      transform: translateY(-4px);
+    }
+
+    .policy-card--feature h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+      color: var(--accent-green);
+      line-height: 1.5;
+    }
+
+    .policy-card--feature p {
+      margin-bottom: 0.75rem;
+    }
+
+    .policy-card--feature ul {
+      margin-top: 0.9rem;
+    }
+
+    .autonomy-copy {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      font-size: 1.15rem;
+      line-height: 2;
+      color: var(--text-muted);
+    }
+
+    .autonomy-stack {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .autonomy-block {
+      padding: 0 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .autonomy-block:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .autonomy-block h3,
+    .autonomy-major h3 {
+      margin: 0 0 0.85rem;
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--sakura);
+      line-height: 1.4;
+    }
+
+    .autonomy-block p,
+    .autonomy-major p {
+      margin: 0;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
+
+    .autonomy-table-wrap {
+      margin-top: 1.25rem;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      background: rgba(0, 0, 0, 0.18);
+    }
+
+    .autonomy-table {
+      width: 100%;
+      min-width: 780px;
+      border-collapse: collapse;
+      color: var(--text);
+    }
+
+    .autonomy-table th,
+    .autonomy-table td {
+      border: 1px solid rgba(233, 30, 140, 0.22);
+      padding: 1rem 1rem;
+      vertical-align: top;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .autonomy-table th {
+      background: rgba(233, 30, 140, 0.12);
+      color: var(--text);
+      font-weight: 900;
+    }
+
+    .autonomy-table td {
+      color: var(--text-muted);
+    }
+
+    .autonomy-table tr:nth-child(even) td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .autonomy-major {
+      margin-top: 1rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid rgba(233, 30, 140, 0.35);
+    }
+
+    .autonomy-major-head {
+      margin: 0 0 1rem;
+      font-size: 1.7rem;
+      font-weight: 950;
+      color: var(--text);
+    }
+
+    .autonomy-subitems {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .autonomy-subitem {
+      padding: 1.25rem 1.25rem 1.1rem;
+      border-left: 4px solid var(--accent-green);
+      border: 1px solid rgba(46, 229, 157, 0.22);
+      background: linear-gradient(180deg, rgba(26, 22, 31, 0.95), rgba(18, 16, 21, 0.98));
+      border-radius: 12px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    .autonomy-subitem h4 {
+      margin: 0 0 0.75rem;
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--accent-green);
+      line-height: 1.5;
+    }
+
+    .autonomy-subitem ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--text-muted);
+    }
+
+    .autonomy-subitem li + li {
+      margin-top: 0.75rem;
+    }
+
+    /* Bio Timeline */
+    .bio-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .bio-item {
+      display: flex;
+      gap: 3rem;
+      margin-bottom: 3rem;
+      padding-left: 2rem;
+      position: relative;
+    }
+
+    .bio-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      width: 12px;
+      height: 12px;
+      background: var(--accent-magenta);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent-magenta);
+    }
+
+    .bio-year {
+      font-weight: 950;
+      font-size: 1.2rem;
+      color: var(--accent-magenta);
+      min-width: 100px;
+    }
+
+    .bio-desc {
+      font-weight: 700;
+    }
+
+    /* Schedule */
+    .schedule-box {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--bg-elevated);
+      padding: 3rem;
+      border: 3px solid var(--gold-dim);
+    }
+
+    .meta-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .meta-list li {
+      display: flex;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-list li:last-child {
+      border-bottom: none;
+    }
+
+    .meta-list strong {
+      min-width: 120px;
+      color: var(--gold);
+      font-weight: 900;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #000;
+      padding: 5rem 1.25rem;
+      text-align: center;
+      border-top: 3px solid var(--accent-magenta-dim);
+    }
+
+    .footer-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .footer-info {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 2;
+    }
+
+    @media (max-width: 1000px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 2rem;
+      }
+
+      .hero-portrait {
+        order: -1;
+        margin-bottom: 3rem;
+      }
+
+      .hero-roles {
+        border-left: none;
+        border-bottom: 4px solid var(--gold);
+        display: inline-block;
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+      }
+
+      .cta-row {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle-label {
+        display: block;
+      }
+
+      .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-deep);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 2px solid var(--accent-magenta);
+      }
+
+      .nav-toggle:checked ~ .nav-list {
+        display: flex;
+      }
+
+      .section-head h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="title">日本結束党 幹事長</span>
+        <span class="name">上梨裕奨</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label class="nav-toggle-label" for="nav-toggle">MENU</label>
+      <nav aria-label="メインナビゲーション">
+        <ul class="nav-list">
+          <li><a href="#top">TOP</a></li>
+          <li><a href="#message">MESSAGE</a></li>
+          <li><a href="#policy">POLICY</a></li>
+          <li><a href="#profile">PROFILE</a></li>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="#support" class="nav-support-btn">支援する</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-content">
+        <p class="hero-badge">2026 杉並区町選挙 候補者</p>
+        <h1>上梨裕奨</h1>
+        <p class="slogan">混沌から、祝祭の政治を。<br>批評と表現で、杉並を更新する。</p>
+        <p class="hero-roles">日本結束党 幹事長 / 批評家 / アーティスト</p>
+        <div class="cta-row">
+          <a href="#policy" class="btn btn--primary">政策を見る</a>
+          <a href="#support" class="btn btn--secondary">支援のお願い</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="assets/kaminashi.png" alt="上梨裕奨 ポートレート" class="hero-portrait-img">
+      </div>
+    </section>
+
+    <section id="message" class="section section--dark">
+      <div class="section-head">
+        <span class="en">Message</span>
+        <h2>メッセージ</h2>
+      </div>
+      <div style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 2.2;">
+        <p>
+          考え中…
+        </p>
+      </div>
+    </section>
+
+    <section id="policy" class="section">
+      <div class="section-head">
+        <span class="en">Policy</span>
+        <h2>重点政策</h2>
+      </div>
+      <div class="policy-grid">
+        <div class="policy-card policy-card--feature">
+          <h3>1. 自治【「すぎなみ魂」の継承と権力の刷新】</h3>
+          <p>中央の管理から脱却し、常に新陳代謝し続ける「生きた自治」を取り戻します。</p>
+          <ul>
+            <li><strong>多選自粛の復活（杉並区長の在任期間に関する条例の再制定）:</strong> 田中前区長が廃止した「3期12年制限」を復活させます。権力の腐敗を防ぎ、常に新しい知性が行政をアップデートし続ける仕組みを実装します。</li>
+            <li><strong>都道拡幅計画の中止と自主防衛:</strong> 住民の生活を壊す道路拡幅を阻止。杉並の外に「自治領（サテライト拠点）」を確保し、自ら土地を管理・警備・耕す実力行使を通じて、真の独立自尊を体現します。</li>
+            <li><strong>「万邦共栄」の理念:</strong> 異質な文化や個性が、それぞれ独立して散らばっているからこそ世界は面白い。画一的な正義の押し付けを拒絶します。</li>
+          </ul>
+        </div>
+        <div class="policy-card policy-card--feature">
+          <h3>2. 経済【「場」を作る雇用と多角的な財政戦略】</h3>
+          <p>AI時代に備え、人間同士の「つながり」を価値化し、区の財政を円以外の資産で守ります。</p>
+          <ul>
+            <li><strong>共同体を再生する「地域通貨」:</strong> 法規制をクリアした実利的な形で導入。外資プラットフォームへの手数料流出を止め、地元の個人店での循環を最大化します。</li>
+            <li><strong>雇用創出型「公共スポットワーク」:</strong> 自治領の施設建設や管理、ラーニングコモンズの講師などを「公共事業」として展開。報酬を地域通貨で支払い、街を支える実感を「地元の店での一杯」に変える循環を再起動させます。</li>
+            <li><strong>円以外の通貨への分散投資:</strong> PayPay還元等のバラマキを停止。その予算を外部拠点でのBTCマイニングやAIデータセンター運営へ振り向け、区が自前で円以外の資産を保有する「攻めの財政」を断行します。</li>
+          </ul>
+        </div>
+        <div class="policy-card policy-card--feature">
+          <h3>3. 教育【知の共有財の還流と成長の保障】</h3>
+          <p>杉並の伝統知と最先端の視座を融合させ、次世代の才能を街に繋ぎ止めます。</p>
+          <ul>
+            <li><strong>杉並ラーニングコモンズ:</strong> 哲学・芸術から生存技術まで、老若男女が無料で学べる場。講師自体を公共事業の雇用とし、知恵を出すことがそのまま地域での生存に繋がるエコシステムを構築します。</li>
+            <li><strong>奨学金返済の区による肩代わり制度:</strong> 区内に定住し、地域活動や技術継承に従事する者の負債を補填。「頭脳流出」を防ぎ、街の物語を更新し続ける知的活力を確保します。</li>
+          </ul>
+        </div>
+        <div class="policy-card policy-card--feature">
+          <h3>4. 空間【身体の自由と「科学的多様性」の実装】</h3>
+          <p>「排除」や「押し付け」を排除し、身体の自由と科学的根拠に基づいた真の共生を実現します。</p>
+          <ul>
+            <li><strong>「科学的多様性」への修正（性の多様性尊重条例のハック）:</strong> 岸本区政の画一的な多様性の押し付けを正し、医療等の公共サービスにおいて生物学的・科学的な区別を明確に維持。アクシデントを防ぎ「科学的現実」に基づいた共生モデルへ変更します。</li>
+            <li><strong>不当な排除の全廃（杉並区暴力団排除条例の廃止）:</strong> 「属性」による一律の排除は、不自由な社会を生みます。刺青があるだけで銭湯から追い出されるような不寛容な制度を終わらせ、身体の自由を公共空間に取り戻します。</li>
+            <li><strong>杉並フリーベースプロジェクト:</strong> 区有施設を活用し、低賃料で個人の居酒屋や小商いが入居できる「文化の実体のシェルター」を整備。家賃高騰から表現の場を死守します。</li>
+          </ul>
+        </div>
+        <div class="policy-card policy-card--feature">
+          <h3>5. 防災【今の街を壊さない「守るテクノロジー」】</h3>
+          <p>「街を壊す防災」から「街を守る防災」へ、サイバー・ローカリズムを断行します。</p>
+          <ul>
+            <li><strong>防災ドローン隊の実装:</strong> 道路を広げずとも、狭小路地へ迅速に消火・救助支援を行う自律型インフラ。歴史的な風景（すぎなみ魂）を壊さずに安全をアップデートします。</li>
+            <li><strong>生存インフラの完全自律:</strong> 外部拠点の電源、食料生産、独自の通信網により、たとえ中央のシステムが停止しても、杉並だけは「灯が消えず、食料が届く」状態を維持する究極のレジリエンスを構築します。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="autonomy" class="section section--dark">
+      <div class="section-head">
+        <span class="en">Autonomy 2026</span>
+        <h2>杉並自律都市構想 2026</h2>
+      </div>
+      <div class="autonomy-copy">
+        <p>
+          <strong style="color: var(--text);">基本理念：万邦共栄・八紘一宇</strong><br>
+          大なり小なり、異質な文化がそれぞれ独立して散らばっているからこそ、世界は面白さに満ち溢れ豊穣である。効率優先の画一的な管理を拒絶し、個の自律と身体性を核とした「不沈の都市国家」を実装する。
+        </p>
+      </div>
+      <div class="autonomy-stack">
+        <div class="autonomy-block">
+          <h3>1. 田中良 前区政への批判的検証</h3>
+          <p>強権的な管理と、物理的な破壊を厭わない「昭和の防災論理」への審判。</p>
+          <div class="autonomy-table-wrap" aria-label="田中良 前区政への批判的検証の対応表">
+            <table class="autonomy-table">
+              <thead>
+                <tr>
+                  <th>対象条例・施策</th>
+                  <th>批判内容</th>
+                  <th>上梨ゆうすけの「自由の実装」</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>杉並区長の在任期間に関する条例<br>(2010年12月廃止)</td>
+                  <td><strong>【権力の腐敗】</strong> 自身の長期政権のために多選制限を廃止。トップの固定は行政の停滞と、時代への適応力喪失を招く。</td>
+                  <td>「廃止の廃止」: 多選制限の復活。3期12年制限を再制定し、常に新しい知性が行政を刷新する仕組みを確立する。</td>
+                </tr>
+                <tr>
+                  <td>杉並区暴力団排除条例<br>(2012年4月施行)</td>
+                  <td><strong>【不当な排除】</strong> 属性による一律の排除は「身体の自由」を侵害。刺青による公衆浴場利用制限など、不自由な差別を助長。</td>
+                  <td>条例の全廃と「身体主権」回復。属性排除を廃止し、身体の自由を公共空間に取り戻す。不干渉と相互承認の文化を重んじる。</td>
+                </tr>
+                <tr>
+                  <td>杉並区狭あい道路の拡幅に関する条例<br>(2016年7月 改正施行)</td>
+                  <td><strong>【街の破壊】</strong> 行政代執行による強制撤去を規定。防災を口実に住民の生活実態（身体性）を破壊する。</td>
+                  <td>代執行停止とドローン防衛。道路拡幅ではなく、ドローン隊による空中防衛を優先し、今の街並みを死守する。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="autonomy-block">
+          <h3>2. 岸本聡子 現区政への批判的検証</h3>
+          <p>画一的な「多様性」の押し付けと、富の外部漏出を伴う「他力本願」への審判。</p>
+          <div class="autonomy-table-wrap" aria-label="岸本聡子 現区政への批判的検証の対応表">
+            <table class="autonomy-table">
+              <thead>
+                <tr>
+                  <th>対象条例・施策</th>
+                  <th>批判内容</th>
+                  <th>上梨ゆうすけの「自由の実装」</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>性の多様性尊重条例<br>(2023年4月 施行)</td>
+                  <td><strong>【非科学的な多様性】</strong> 生物学的な性差を無視した押し付けは、医療や公共サービスでのアクシデントを招くリスク。</td>
+                  <td>「科学的視座」への抜本修正。多様性を尊重しつつも、科学的・生物学的現実を重視し、実害のない真の共生モデルへ変更。</td>
+                </tr>
+                <tr>
+                  <td>ポイント還元事業<br>(2026年6月 予定)</td>
+                  <td><strong>【富の外部漏出】</strong> 血税を大手IT企業の手数料として中抜きさせる「他力本願」。杉並の富を外に逃がす敗北。</td>
+                  <td>「独自通貨」と「マイニング投資」へ転換。ポイント還元を停止し、予算を独自通貨の基盤整備と BTC マイニング等の攻めの投資へ振換。</td>
+                </tr>
+                <tr>
+                  <td>子どもの権利に関する条例<br>(2025年4月 施行)</td>
+                  <td><strong>【管理された成長】</strong> 子どもを保護される「客体」としてのみ扱い、行政の過剰介入を招き、自律性を奪う懸念。</td>
+                  <td>「歴史の主体」の教育。管理ではなく、自分で立ち、街を運営する技術を教える。講師を公共事業とし雇用。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="autonomy-major">
+          <h3 class="autonomy-major-head">3. 上梨ゆうすけによる独立生存のための5大実装</h3>
+          <div class="autonomy-subitems">
+            <div class="autonomy-subitem">
+              <h4>1. 自治：主権とサテライト拠点の確保</h4>
+              <ul>
+                <li><strong>外部自治領（サテライト拠点）:</strong> 都外に土地を確保。自ら耕し、守ることで、独立自尊の「実力」を養成。</li>
+                <li><strong>万邦共栄の実践:</strong> 異質な文化が独立して散らばる豊穣な世界を、杉並から証明する。</li>
+              </ul>
+            </div>
+            <div class="autonomy-subitem">
+              <h4>2. 経済：計算資源による富の防衛</h4>
+              <ul>
+                <li><strong>円以外の資産保有:</strong> 外部拠点の再エネを活用したBTCマイニング、AIデータセンターの運営。</li>
+                <li><strong>地域経済のデカップリング:</strong> 手数料ゼロの独自通貨と「公共スポットワーク（建設・教育）」の連動。</li>
+              </ul>
+            </div>
+            <div class="autonomy-subitem">
+              <h4>3. 教育：知の共有財（コモンズ）の還流</h4>
+              <ul>
+                <li><strong>杉並ラーニングコモンズ:</strong> 哲学から生存技術まで、老若男女が無料で学ぶ場。</li>
+                <li><strong>講師の公共事業化:</strong> 区民が教えること自体を雇用創設とし、地域通貨で報酬を支払う。</li>
+              </ul>
+            </div>
+            <div class="autonomy-subitem">
+              <h4>4. 空間：実体のある居場所（シェルター）</h4>
+              <ul>
+                <li><strong>杉並フリーベースプロジェクト:</strong> 低賃料で個人の居酒屋や小商いが入居できる物理的シェルターを整備。</li>
+                <li><strong>解放区の創設:</strong> 公園や路地の規制を撤廃。排除アートを全廃し、身体の自由を保障する。</li>
+              </ul>
+            </div>
+            <div class="autonomy-subitem">
+              <h4>5. 防災：非破壊のサイバー・ローカリズム</h4>
+              <ul>
+                <li><strong>防災ドローン隊:</strong> 歴史的な風景を壊さず、空から消火・救助を行う日本最高水準の防衛網。</li>
+                <li><strong>生存インフラ自律:</strong> 中央インフラが停止しても「灯が消えず、食料が届く」絶対的レジリエンス。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="section section--dark">
+      <div class="section-head">
+        <span class="en">Profile</span>
+        <h2>プロフィール</h2>
+      </div>
+      <div class="bio-timeline">
+        <div class="bio-item">
+          <div class="bio-year">19XX年</div>
+          <div class="bio-desc">〇〇県生まれ。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="works" class="section">
+      <div class="section-head">
+        <span class="en">Works / Party</span>
+        <h2>作品・党活動</h2>
+      </div>
+      <div class="policy-grid">
+        <div class="policy-card" style="border-left-color: var(--gold);">
+          <h3>作品アーカイブ</h3>
+          <p>これまで制作した書籍、映像、音楽、展示等の活動記録を順次アーカイブとして公開いたします。</p>
+        </div>
+        <div class="policy-card" style="border-left-color: var(--gold);">
+          <h3>日本結束党の歩み</h3>
+          <p>日本結束党の理念や、幹事長として取り組んできた党務・街頭活動の軌跡を紹介いたします。</p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section id="events" class="section section--dark">
+      <div class="section-head">
+        <span class="en">Events</span>
+        <h2>活動スケジュール</h2>
+      </div>
+      <div class="schedule-box">
+        <ul class="meta-list">
+          <li><strong>日時</strong> 調整中（随時更新）</li>
+          <li><strong>場所</strong> 杉並区内各地 / オンライン</li>
+          <li><strong>内容</strong> 街頭演説・対話集会・ライブ配信など</li>
+        </ul>
+        <div style="margin-top: 2.5rem; text-align: center;">
+          <p style="font-weight: 700; color: var(--text-muted); margin-bottom: 1.5rem;">最新情報は公式SNSでも発信中</p>
+          <a href="#" class="btn btn--secondary" aria-disabled="true" tabindex="-1">公式X (旧Twitter) を見る</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="support" class="section">
+      <div class="section-head">
+        <span class="en">Support</span>
+        <h2>支援のお願い</h2>
+      </div>
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <p style="font-size: 1.3rem; font-weight: 700; line-height: 1.8; margin-bottom: 3rem;">
+          上梨裕奨の挑戦は、皆様の「結束」に支えられています。<br>
+          ボランティア、寄附、SNSでの拡散など、力をお貸しください。
+        </p>
+        <div style="background: var(--bg-elevated); border: 1px solid var(--border); padding: 2rem; margin-bottom: 2.5rem; text-align: left;">
+          <p style="margin: 0 0 1rem; font-size: 0.9rem; font-weight: 900; color: var(--accent-green); letter-spacing: 0.12em; text-transform: uppercase;">Donation</p>
+          <p style="margin: 0 0 0.75rem; font-size: 1.1rem; font-weight: 800; color: var(--text);">寄付先</p>
+          <p style="margin: 0; font-size: 1.4rem; font-weight: 900; color: var(--accent-magenta); word-break: break-all;">PayPay銀行 はやぶさ支店 003 普通 2824588</p>
+        </div>
+        <!-- <div class="cta-row" style="justify-content: center;">
+          <a href="#contact" class="btn btn--primary">ボランティアに参加</a>
+          <a href="#contact" class="btn btn--secondary">個人寄附について</a>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="contact" class="section section--dark">
+      <div class="section-head">
+        <span class="en">Contact</span>
+        <h2>お問い合わせ</h2>
+      </div>
+      <div style="max-width: 600px; margin: 0 auto; text-align: center; background: var(--bg-elevated); padding: 3rem; border: 1px solid var(--border);">
+        <p style="margin-bottom: 2rem; font-weight: 700;">取材依頼、ボランティア希望、その他のお問い合わせは公式Xまでご連絡ください。</p>
+        <p style="font-size: 1.5rem; font-weight: 900; color: var(--accent-magenta); margin: 1.5rem 0;">
+          <a href="https://x.com/kessokutou_kmns" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">@kessokutou_kmns</a>
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">※XのDMをご利用ください。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="#top">TOP</a>
+        <a href="#message">メッセージ</a>
+        <a href="#policy">政策</a>
+        <a href="#profile">プロフィール</a>
+        <a href="#events">スケジュール</a>
+        <a href="#support">支援する</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <div class="footer-info">
+        <p style="font-weight: 900; color: var(--text); letter-spacing: 0.1em; margin-bottom: 1rem;">日本結束党 事務局</p>
+        <p>© 2026 上梨裕奨 公式サイト</p>
+      </div>
+      <div style="margin-top: 3rem;">
+        <a href="#top" style="color: var(--accent-magenta); text-decoration: none; font-weight: 950; font-size: 0.8rem; letter-spacing: 0.2em;">BACK TO TOP</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
