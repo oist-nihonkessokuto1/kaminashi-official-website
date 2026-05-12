@@ -1,1 +1,1 @@
-https://oist-nihonkessokuto1.github.io/kaminashi-official-website/src/index.html#top
+https://oist-nihonkessokuto1.github.io/kaminashi-official-website/
