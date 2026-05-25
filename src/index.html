@@ -21,6 +21,16 @@
   <meta name="twitter:title" content="上梨ゆうすけ 公式サイト — 日本結束党 副頭領（2026杉並区町選挙）">
   <meta name="twitter:description" content="2026年杉並区町選挙候補・日本結束党副頭領 上梨ゆうすけの公式サイト。プロフィール、政策、活動報告、支援・連絡の案内。">
   <meta name="twitter:image" content="https://oist-nihonkessokuto1.github.io/kaminashi-official-website/assets/ogp.jpg">
+  <link rel="canonical" href="https://oist-nihonkessokuto1.github.io/kaminashi-official-website/">
+
+  <!-- LCP: ヒーロー画像を早期取得（モバイルは軽量版） -->
+  <link
+    rel="preload"
+    as="image"
+    fetchpriority="high"
+    imagesrcset="assets/kaminashi.jpg 400w, assets/kaminashi.webp 720w"
+    imagesizes="(max-width: 768px) 90vw, 450px"
+  >
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -49,6 +59,8 @@
       --text: #f4eef2;
       --text-muted: #b8a8b5;
       --accent-magenta: #e91e8c;
+      /* 白文字ボタン用（WCAG AA 4.5:1 以上） */
+      --accent-magenta-contrast: #c01674;
       --accent-magenta-dim: #9d145f;
       --accent-green: #2ee59d;
       --accent-green-dim: #1a8f62;
@@ -89,7 +101,7 @@
       left: -9999px;
       z-index: 9999;
       padding: 0.75rem 1.25rem;
-      background: var(--accent-magenta);
+      background: var(--accent-magenta-contrast);
       color: white;
       font-weight: 700;
       text-decoration: none;
@@ -184,7 +196,7 @@
     }
 
     .nav-support-btn {
-      background: var(--accent-magenta);
+      background: var(--accent-magenta-contrast);
       color: white !important;
       padding: 0.6rem 1.5rem;
       border-radius: 999px;
@@ -283,14 +295,15 @@
     }
 
     .btn--primary {
-      background: var(--accent-magenta);
+      background: var(--accent-magenta-contrast);
       color: white;
-      box-shadow: 0 10px 25px rgba(233, 30, 140, 0.4);
+      box-shadow: 0 10px 25px rgba(192, 22, 116, 0.4);
     }
 
     .btn--primary:hover {
+      background: var(--accent-magenta-dim);
       transform: translateY(-2px);
-      box-shadow: 0 15px 30px rgba(233, 30, 140, 0.5);
+      box-shadow: 0 15px 30px rgba(157, 20, 95, 0.5);
     }
 
     .btn--secondary {
