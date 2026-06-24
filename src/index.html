@@ -384,6 +384,10 @@
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 
+    .policy-grid--two-up {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .policy-card {
       background: var(--bg-elevated);
       padding: 3.5rem 2.5rem;
@@ -709,6 +713,12 @@
       }
     }
 
+    @media (max-width: 900px) {
+      .policy-grid--two-up {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 768px) {
       .nav-toggle-label {
         display: block;
@@ -813,8 +823,8 @@
       <nav class="site-nav" aria-label="メインナビゲーション">
         <ul class="nav-list">
           <li><a href="#top">TOP</a></li>
-          <li><a href="#message">MESSAGE</a></li>
-          <li><a href="#policy">POLICY</a></li>
+          <li><a href="#message">メッセージ</a></li>
+          <li><a href="#pledges">4大公約</a></li>
           <!-- <li><a href="#profile">PROFILE</a></li> -->
           <!-- <li><a href="#events">EVENTS</a></li> -->
           <li><a href="#support">支援する</a></li>
@@ -838,6 +848,27 @@
       </div>
       <div class="hero-portrait">
         <img src="assets/kaminashi.webp" alt="上梨ゆうすけ ポートレート" class="hero-portrait-img">
+      </div>
+    </section>
+
+    <section id="schedule" class="section section--dark">
+      <div class="section-head">
+        <span class="en">Schedule</span>
+        <h2>杉並区議補選 スケジュール</h2>
+      </div>
+      <div class="schedule-box">
+        <ul class="meta-list">
+          <li><strong>投票日</strong> 当日投票 2026年 6月28日（日） 午前7時 〜 午後8時 （区内各投票所にて）</li>
+          <li><strong>期日前投票</strong> 毎日投票可能・土日もOK 2026年 6月22日（月） 〜 6月27日（土） 午前8時30分 〜 午後8時 （杉並区役所や各地域区民センター等で投票できます）</li>
+        </ul>
+        <div style="margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--accent-green-dim); background: rgba(26, 143, 98, 0.12);">
+          <p style="margin: 0 0 0.75rem; font-size: 1.1rem; font-weight: 900; color: var(--accent-green);">💡 【手ぶらで今すぐ投票できます！】</p>
+          <p style="margin: 0; color: var(--text);">
+            入場整理券（投票用紙）がまだ手元に届いていなくても、万が一紛失してしまっていても、身分証を持っていなくても大丈夫です。<br>
+            期日前投票所に行き、その場で宣誓書に記入すればその場ですぐに投票可能です。<br>
+            お仕事帰りやお出かけのついでに、あなたの声を託してください。
+          </p>
+        </div>
       </div>
     </section>
 
@@ -865,7 +896,36 @@
       </div>
     </section>
 
-    <section id="policy" class="section">
+    <section id="pledges" class="section">
+      <div class="section-head">
+        <span class="en">Pledges</span>
+        <h2>上梨ゆうすけが突きつける4大公約</h2>
+      </div>
+      <div class="policy-grid policy-grid--two-up">
+        <article class="policy-card policy-card--feature">
+          <h3>提言1：【主権防衛】ネット選挙の有料広告規制を求める「意見書」の提出</h3>
+          <p><strong>現代の「カネの政治」の正体を暴く：</strong> 膨大な資金を投じてネットのアルゴリズムへ介入し、有権者の視界を支配する――これこそが、現代の新しい「カネの政治」の姿です。</p>
+          <p><strong>杉並から国を動かす：</strong> 資金力の差が民意を歪める不公正な現状を打破するため、ネット選挙運動における有料広告の制限や透明化を国に求める「意見書」を、杉並区議会から先頭に立って国へ提出します。お金の力に支配されない、住民主体の公正な民主主義を守り抜きます。</p>
+        </article>
+        <article class="policy-card policy-card--feature">
+          <h3>提言2：【生活死守】物価高から給食の質を守る「品質維持条例」の制定</h3>
+          <p><strong>無償化の「中身」を守る：</strong> すでに杉並区で実現した給食無償化。しかし、急激な食材高騰のしわ寄せが子どもの皿（栄養・量・安全性）に行っては意味がありません。</p>
+          <p><strong>スピード補填の仕組み化：</strong> 区独自の厳しい品質基準を定める条例を提案します。物価高の際には古い党派性の議論で引き延ばさず、速やかに追加予算を投入して現場の財政を補填できる仕組みを議会から要求し、子どもたちの食を死守します。</p>
+        </article>
+        <article class="policy-card policy-card--feature">
+          <h3>提言3：【文化・経済】小商いへの最大のリスペクトと、手数料ゼロの自律経済</h3>
+          <p><strong>文化の担い手を守る：</strong> これまで杉並の固有のカルチャーを守り、これから新しい文化を創り出す商店街や「小商い（スモールビジネス）」、表現者たちを心からリスペクトし応援します。</p>
+          <p><strong>富の流出を防ぐ：</strong> 巨大決済企業に富を吸い上げられないよう、決済手数料の発生しない日本円ステーブルコイン（JPYCなど）の導入・活用を議会から後押し。店舗も区民も損をしない、自律的な地域経済圏を実装します。</p>
+        </article>
+        <article class="policy-card policy-card--feature">
+          <h3>提言4：【地域連帯】東北・能登の被災地と結ぶ、草の根の「分散型・相互扶助網」</h3>
+          <p><strong>中央依存からの脱却：</strong> 国や中央の硬直したシステムに過度に依存せず、東北や能登の被災地の現場と杉並をダイレクトに結ぶコミュニティ連携を議会から推進します。</p>
+          <p><strong>有事も平時も直接支え合う：</strong> 災害を生き抜く知恵や、互いのリソースを共有し合い、平時から有事まで直接支え合える自律的な仕組みを構築。一極集中を超えた新しいオルタナティブカルチャーをここ杉並から創出します。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- <section id="policy" class="section">
       <div class="section-head">
         <span class="en">Policy</span>
         <h2>基本政策</h2>
@@ -1034,7 +1094,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- <section id="profile" class="section section--dark">
       <div class="section-head">
@@ -1089,20 +1149,39 @@
         <span class="en">Support</span>
         <h2>支援のお願い</h2>
       </div>
-      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <p style="font-size: 1.3rem; font-weight: 700; line-height: 1.8; margin-bottom: 3rem;">
-          上梨ゆうすけの挑戦は、皆様の「結束」に支えられています。<br>
-          ボランティア、寄附、SNSでの拡散など、力をお貸しください。
-        </p>
-        <div style="background: var(--bg-elevated); border: 1px solid var(--border); padding: 2rem; margin-bottom: 2.5rem; text-align: left;">
-          <p style="margin: 0 0 1rem; font-size: 0.9rem; font-weight: 900; color: var(--accent-green); letter-spacing: 0.12em; text-transform: uppercase;">Donation</p>
-          <p style="margin: 0 0 0.75rem; font-size: 1.1rem; font-weight: 800; color: var(--text);">寄付先</p>
-          <p style="margin: 0; font-size: 1.4rem; font-weight: 900; color: var(--accent-magenta); word-break: break-all;">三菱UFJ銀行 福岡支店 六五三 <br/>普通 〇二五〇〇六四 アイカワケンジロウ</p>
-        </div>
-        <!-- <div class="cta-row" style="justify-content: center;">
-          <a href="#contact" class="btn btn--primary">ボランティアに参加</a>
-          <a href="#contact" class="btn btn--secondary">個人寄附について</a>
-        </div> -->
+      <div class="policy-grid policy-grid--two-up">
+        <article class="policy-card policy-card--feature">
+          <h3>💳 1. 個人寄付（政治献金）のお願い</h3>
+          <p style="font-size: 1.15rem; font-weight: 800; line-height: 1.9; color: var(--accent-green); margin-bottom: 1rem;">
+            お金の力に支配されない政治を、あなたのワンコインから。
+          </p>
+          <p>
+            上梨ゆうすけは、特定の企業、組織、団体からの大規模な資金援助を一切受けずに、完全な無所属として活動しています。 膨大な資金でアルゴリズムを支配する「現代のカネの政治」に対抗し、住民主体の公正なデモクラシーを取り戻すためには、あなた一人ひとりの草の根の支援が必要です。
+          </p>
+          <p style="margin-bottom: 0;">
+            思想と政策に共感していただける方は、ぜひ個人寄付（政治献金）による「投資」をお願いいたします。いただいた資金は、ビラ印刷代や活動費など、すべて杉並を変えるためのエネルギーとして透明性を持って活用させていただきます。
+          </p>
+        </article>
+        <article class="policy-card policy-card--feature">
+          <h3>💬 2. LINEオープンチャットで繋がる</h3>
+          <p style="font-size: 1.15rem; font-weight: 800; line-height: 1.9; color: var(--accent-green); margin-bottom: 1rem;">
+            杉並をハックする、草の根のデジタル本陣へ。
+          </p>
+          <p>
+            「上梨ゆうすけの動きをリアルタイムで追いかけたい」 「ポスター貼りやビラ配りのボランティアに参加してみたい」 「党派を超えて、これからの杉並の文化や経済について議論したい」
+          </p>
+          <p>
+            そんな一人ひとりが匿名・手軽に集まれるコミュニティとして、公式LINEオープンチャットを開設しています。 ここでは、選挙戦の裏側、突発的なゲリラ街宣の告知、ボランティアの募集などをリアルタイムで発信していきます。見るだけの参加も、ガッツリ並走する参加も大歓迎です。
+          </p>
+          <p style="margin-bottom: 1rem;">
+            中央のシステムに依存しない、私たちの「分散型ネットワーク」をここから広げていきましょう！
+          </p>
+          <p style="margin-bottom: 0;">
+            <a href="https://openchat.line.me/tw/cover/iOk3nBAiFdcLUWKVokUEykkf-BymqOYcmkgsygzzOi6uHO9jImVmeY15kQ4?utm_source=line-openchat-seo&utm_medium=similar&utm_campaign=cover" target="_blank" rel="noopener noreferrer" style="color: var(--accent-magenta); font-weight: 900; text-decoration: none;">
+              👉 LINEオープンチャットに参加する（無料）
+            </a>
+          </p>
+        </article>
       </div>
     </section>
 
@@ -1126,7 +1205,7 @@
       <nav class="footer-nav">
         <a href="#top">TOP</a>
         <a href="#message">メッセージ</a>
-        <a href="#policy">政策</a>
+        <a href="#pledges">4大公約</a>
         <!-- <a href="#profile">プロフィール</a>
         <a href="#events">スケジュール</a> -->
         <a href="#support">支援する</a>
@@ -1134,7 +1213,11 @@
       </nav>
       <div class="footer-info">
         <p style="font-weight: 900; color: var(--text); letter-spacing: 0.1em; margin-bottom: 1rem;">日本結束党 事務局</p>
-        <p>© 2026 上梨ゆうすけ 公式サイト</p>
+        <p style="margin: 0.25rem 0;">候補者（本名）： 上梨 裕奨（かみなし ゆうすけ）</p>
+        <p style="margin: 0.25rem 0;">政治活動名： 上梨 ゆうすけ（かみなし ゆうすけ）</p>
+        <p style="margin: 0.25rem 0;">所属： 日本結束党</p>
+        <p style="margin: 0.25rem 0;">選挙事務所： 〒167-0032 東京都杉並区本天沼3-21-12 パルデンス本天沼103</p>
+        <p>© 2026 上梨ゆうすけ 公式サイト<a href="https://neobakufu.com/" target="_blank" rel="noopener noreferrer">.</a></p>
       </div>
       <div style="margin-top: 3rem;">
         <a href="#top" style="color: var(--accent-magenta); text-decoration: none; font-weight: 950; font-size: 0.8rem; letter-spacing: 0.2em;">BACK TO TOP</a>
